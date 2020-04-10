@@ -13,7 +13,7 @@ module.exports = function(){
         let routes = require('../routes');
         //set all the server things
         //server.set('env' , config.env);
-        server.set('port' , process.env.PORT);
+        server.set('port' , process.env.PORT || 3000);
         server.set('hostname' , "http://localhost");
 
         //add middleware to parse json
@@ -27,7 +27,7 @@ module.exports = function(){
     
         //connect the database
         mongoose.connect(
-            db.database,{
+            db.secret,{
                 useNewUrlParser:true,
                 useCreateIndex:true
             }
