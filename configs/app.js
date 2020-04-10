@@ -9,12 +9,12 @@ module.exports = function(){
     create,
     start;
 
-    create = (config , db) =>{
+    create = (db) =>{
         let routes = require('../routes');
         //set all the server things
         //server.set('env' , config.env);
-        server.set('port' , config.port);
-        server.set('hostname' , config.hostname);
+        server.set('port' , process.env.PORT);
+        server.set('hostname' , "http://localhost");
 
         //add middleware to parse json
         server.use(morgan(':method :url :status :res[content-length] - :response-time ms'));

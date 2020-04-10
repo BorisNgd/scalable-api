@@ -3,7 +3,7 @@ const config = require('./configs/config/config');
 const db = require('./configs/db');
 
 //create the basic server setup
-server.create(config , db);
+server.create(db);
 
 //start the server
 server.start();
