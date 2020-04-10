@@ -12,7 +12,7 @@ module.exports = function(){
     create = (config , db) =>{
         let routes = require('../routes');
         //set all the server things
-        server.set('env' , config.env);
+        //server.set('env' , config.env);
         server.set('port' , config.port);
         server.set('hostname' , config.hostname);
 
