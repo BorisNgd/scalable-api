@@ -1,0 +1,27 @@
+{
+  "name": "scalable-api",
+  "version": "1.0.0",
+  "description": "Build a scalable api with nodeJs and Express",
+  "main": "server.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "keywords": [
+    "API",
+    "REST",
+    "SCALABLE",
+    "NODE"
+  ],
+  "author": "Boris Ngd",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "lodash": "^4.17.15",
+    "mongoose": "^5.9.7",
+    "morgan": "^1.10.0",
+    "nodemailer": "^6.4.6",
+    "nodemon": "^2.0.2"
+  }
+}
