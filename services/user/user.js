@@ -200,7 +200,6 @@ const sendEmailtoUser =  (req , res , next) =>{
        let transport = nodeMailer.createTransport({
            host: "smtp.mailtrap.io",
            port: 2525,
-           secure:true,
            auth: {
                user: "05edd8e00903dc",
                pass: "320c1749b0d113",
