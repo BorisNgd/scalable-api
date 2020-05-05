@@ -1,4 +1,5 @@
 const apiRoute = require('./apis');
+const public = require('./public');
 
 const init = (server) => {
     server.use('*' , function(req , res , next){
@@ -7,6 +8,7 @@ const init = (server) => {
     });
 
     server.use('/api' , apiRoute);
+    server.use('' , public)
 }
 
 module.exports = {
